@@ -141,7 +141,7 @@ export default function Nav() {
         />
       </div>
       <div className={[styles.btn, state.layout === 'left' ? null : styles.btnTop].filter(Boolean).join(' ').trim()}>
-        <dark-mode light="Light" dark="Dart"></dark-mode>
+        <dark-mode light="Light" dark="Dart" style={{ color: '#fff', marginRight: 10 }}></dark-mode>
         <select value={i18n.language} onChange={(e) => changeLanguage(e)}>
           <option value="zh-CN">简体中文</option>
           <option value="en-US">English</option>
